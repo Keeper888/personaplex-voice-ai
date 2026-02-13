@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonaPlex Voice AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="orb-canvas"></canvas>
+
+        <div id="ui-overlay">
+            <div id="status-bar">
+                <span id="status-dot"></span>
+                <span id="status-text">Ready</span>
+            </div>
+
+            <div id="transcript" class="hidden">
+                <p id="transcript-text"></p>
+            </div>
+
+            <div id="controls">
+                <button id="start-btn">Start Conversation</button>
+                <button id="stop-btn" class="hidden">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
